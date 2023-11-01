@@ -1,0 +1,234 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: justify;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr 2fr;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr 2fr;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Highlighted text style */
+.highlight {
+  /* background-color: yellow; */
+  background-color: rgba(255, 255, 0, 0.374);
+  background-color: lightblue;
+  background-color: #4caf50;
+  background-color: rgb(224, 86, 86);
+  background-color: lightgreen;
+  /* color: #eee; */
+  font-weight: bold;
+}
+
+/* Pop-up note style */
+.popup-note {
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #f3eac5; */
+  font-size: 20px;
+  border: 1px solid #333;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Note style */
+.note {
+  cursor: pointer;
+  color: blue;
+}
+
+/* Note container style */
+.note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: first baseline;
+  /* height: 100vh; */
+  background-color: #f3eac5; /* Background color resembling aged newspaper */
+}
+
+/* Note style */
+.note {
+  width: 80%;
+  max-width: 600px;
+  background-color: #fdf5e4; /* Light background color similar to aged paper */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* font-size: 16px; */
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif; /* Use a classic newspaper-style font */
+  line-height: 1.6; /* Adjust line height for readability */
+  color: #4a3c2a; /* Dark text color resembling old newspaper ink */
+  border: 1px solid #cdc0a7; /* Border for a classic feel */
+}
+
+/* Dark mode */
+/* Note container style */
+/* .note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4a3c2a;
+} */
+
+/* Note style */
+/* .note {
+  width: 80%;
+  max-width: 600px;
+  background-color: #2a2116;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-family: "Georgia", "Times", "serif";
+  line-height: 1.6;
+  color: #c2b09f;
+  border: 1px solid #b8a995;
+} */
+
+/* Copy button style */
+#copyButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  display: grid;
+}
+
+/* Button hover effect */
+#copyButton:hover {
+  background-color: #45a049;
+}
+
+/***************************** T h e m e s *****************************/
+/* Light Theme Styles */
+body.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+body.light table {
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+body.light table th,
+body.light table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+body.light a {
+  color: #0074d9; /* Blue */
+  text-decoration: none;
+}
+
+/* Dark Theme Styles */
+body.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark table {
+  background-color: #444;
+  border-collapse: collapse;
+  /* color: #333; */
+}
+
+body.dark table th,
+body.dark table td {
+  background-color: #333;
+  border: 1px solid #555;
+  padding: 8px;
+  text-align: left;
+}
+
+body.dark a {
+  color: #ff851b; /* Orange */
+  text-decoration: none;
+}
+
+/* Heather Blue Theme Styles */
+body.heather_blue {
+  background-color: #b7c0e4;
+  color: #000000;
+}
+
+body.heather_blue table {
+  background-color: #8d99ae; /* Light Gray-Blue */
+  border-collapse: collapse;
+}
+
+body.heather_blue table th,
+body.heather_blue table td {
+  border: 1px solid #657b83; /* Heather Blue */
+  padding: 8px;
+  text-align: left;
+}
+
+body.heather_blue a {
+  color: #2a9d8f; /* Dark Teal */
+  text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Copyright Text Styles */
+.copyright {
+  font-weight: bold;
+  font-style: italic;
+}
